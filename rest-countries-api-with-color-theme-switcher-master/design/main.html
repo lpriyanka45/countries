@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>countries-api</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./country.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Where in the world?</h1>
+        <button class="switch"><b class="far fa-moon"></b>Dark Mode</button>
+    </div>
+    <div class="container">
+        <div class="searchbar">
+            <b class="fas fa-search"></b>
+            <input type="text" placeholder="Search for a country..." class="search">
+        </div>
+        <div class="filteroptions">
+            <div class="filter">
+                <p>Filter by Region</p>
+                <buttton><b class="fas fa-chevron-down"></b></buttton>
+            </div>
+            <div class="options hiddenOptions">
+                <p class="region">Africa</p>
+                <p class="region">America</p>
+                <p class="region">Asia</p>
+                <p class="region">Europe</p>
+                <p class="region">Oceania</p>
+            </div>
+        </div>
+    </div>
+    <div class="countries">
+    </div>
+    <!--<script src="./country.js" defer></script>-->
+    <div class="countryDescription show">
+        <button id="box">Back</button>
+        <b class="fas fa-arrow-left"></b>
+        <div class="description">
+            <div class="left-des">
+                <img src="" alt="">
+            </div>
+            <div class="right-des">
+                <h1><span class="head-name"></span></h1>
+                <div class="subpart">
+                    <div class="innerLeft-des">
+                        <p><strong>Native Name: </strong><span class="native-name"></span> </p>
+                        <p><strong>Population: </strong><span class="population"></span></p>
+                        <p><strong>Region: </strong><span class="coun-region"></span></p>
+                        <p><strong>Sub Region: </strong><span class="sub-region"></span></p>
+                        <p><strong>Capital: </strong><span class="capital"></span></p>
+                    </div>
+                    <div class="innerRight-des">
+                        <p><strong>Top Level Domain: </strong><span class="top-level-domain"></span></p>
+                        <p><strong>Currencies: </strong><span class="currencies"></span></p>
+                        <p><strong>Languages: </strong><span class="languages"></span></p>
+                    </div>
+                </div>
+                <p class="border-countries"><strong>Border Countries: </strong>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
